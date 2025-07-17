@@ -1,1 +1,146 @@
-/* Reset & Base */ ... (truncated for clarity) ... footer { text-align: center; margin-top: 40px; color: #888; }
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  background: #f8f9fa;
+  color: #333;
+  padding: 20px;
+}
+
+h1, h2 {
+  color: #1f3c88;
+}
+
+/* Hero Section */
+.hero {
+  background: #ffffff;
+  padding: 40px 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  margin-bottom: 30px;
+}
+
+.hero .buttons {
+  margin-top: 20px;
+}
+
+.btn {
+  text-decoration: none;
+  background: #1f3c88;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 0 10px;
+  display: inline-block;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #4169e1;
+}
+
+/* Sections */
+section {
+  background: #ffffff;
+  margin-bottom: 30px;
+  padding: 30px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.profile-pic {
+  width: 150px;
+  border-radius: 50%;
+  margin: 20px 0;
+}
+
+.services ul, .portfolio ul {
+  list-style: none;
+  padding-left: 20px;
+}
+
+.services li, .portfolio li {
+  margin-bottom: 10px;
+}
+
+/* Timeline */
+.timeline-container {
+  border-left: 4px solid #1f3c88;
+  padding-left: 20px;
+  position: relative;
+}
+
+.timeline-item {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -12px;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  background: #1f3c88;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+/* Skills Tags */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.tags span {
+  background: #e1eaff;
+  color: #1f3c88;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+/* Contact */
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: auto;
+}
+
+.contact input, .contact textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.contact button {
+  background: #1f3c88;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.contact button:hover {
+  background: #4169e1;
+}
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  color: #888;
+}
